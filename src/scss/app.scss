@@ -1,3 +1,141 @@
-body{
-    background-color: black;
+.ChitChat {
+    min-height: 100vh; // no va
+    background-color: #71B9F0; // no va
+    .buttons-menu {
+        height: 48px;
+        width: 50%;
+        border-radius: 24px;
+        font-family: PTSans-Bold;
+        font-size: 24px;
+    }
+    &-button-log-in {
+        border-style: none;
+        background-color: #FFFFFF;
+        color: #262626;
+    }
+    &-button-sign-up {
+        background-color: transparent;
+        border: 4px solid #FFFFFF;
+        color: #FFFFFF;
+    }
+    &-input-log-in {
+        font-family: PTSans-Regular;
+        font-size: 18px;
+        height: 48px;
+        background: #F6F6F6;
+        border-radius: 10px;
+        border-style: none;
+        text-align: center;
+    }
+    &-desc-buttons {
+        height: 48px;
+        width: 25%;
+        border-radius: 30px;
+        border-style: none;
+        font-family: PTSans-Bold;
+        font-size: 22px;
+        color: #262626;
+    }
+    &-robot {
+        &-header {
+            padding: 124px 136px 84px;
+            &-title {
+                display: block;
+                font-family: PTSans-Bold;
+                font-size: 28px;
+                color: #FFFFFF;
+                font-weight: 700;
+                text-align: center;
+                margin: 0 0 24px;
+            }
+            &-text {
+                display: block;
+                margin: auto;
+                font-family: PTSans-Regular;
+                font-size: 24px;
+                color: #FFFFFF;
+                text-align: center;
+                font-weight: 400;
+            }
+        }
+        &-container {
+            padding: 0 81px;
+            &-btns {
+                display: flex;
+                justify-content: space-between;
+            }
+            &-body {
+                padding: 30px 0;
+                &-img {
+                    display: block;
+                    margin: auto;
+                }
+            }
+        }
+    }
+    &-modal {
+        &-comp {
+            position: fixed;
+            background-color: rgba(0,0,0,0.30);
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 999;
+            transition: all 0.3s;
+            &-close {
+                display: flex;
+                justify-content: end;
+                &-btn {
+                    border: 0;
+                    outline: none;
+                    background-color: transparent;
+                }
+            }
+            &-container {
+                width: 75%;
+                height: 55%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                padding: 30px;
+                background: #FFFFFF;
+                border-radius: 10px;
+                &-img {
+                    width: 329px;
+                    display: block;
+                    margin: auto;
+                }
+                h2 {
+                    font-family: PTSans-Bold;
+                    font-size: 40px;
+                    color: #262626;
+                    font-weight: 700;
+                    text-align: center;
+                    margin: 5px 0 16px;
+                }
+                p {
+                    font-family: PTSans-Regular;
+                    font-size: 28px;
+                    color: #262626;
+                    text-align: center;
+                    font-weight: 400;
+                    margin: 0 0 35px;
+                }
+            }
+            
+        }
+        
+        &.display-none {
+            visibility: hidden;
+            opacity: 0;
+            pointer-events: none;
+        }
+        &.display-block {
+            visibility: visible;
+            opacity: 1;
+            pointer-events: auto;
+        }
+    }
 }
