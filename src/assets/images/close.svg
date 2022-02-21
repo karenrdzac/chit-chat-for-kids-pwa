@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>x@1.5x</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Robot-set-up-Copy-5" transform="translate(-662.000000, -282.000000)" stroke="#A871F0" stroke-width="4">
+            <g id="Group-8" transform="translate(51.000000, 250.000000)">
+                <g id="x" transform="translate(613.000000, 34.000000)">
+                    <line x1="18" y1="0" x2="0" y2="18" id="Path"></line>
+                    <line x1="0" y1="0" x2="18" y2="18" id="Path"></line>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

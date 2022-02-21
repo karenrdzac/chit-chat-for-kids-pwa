@@ -1,11 +1,10 @@
 import React from 'react';
-import logo from './logo.svg';
 import './scss/app.scss';
+import Robot from './screens/Robot';
 
 function App() {
   return (
-    <div className="ChitChat">
-    </div>
+    <Robot></Robot>
   );
 }
 
