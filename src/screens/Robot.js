@@ -6,10 +6,14 @@ import robotBody from '../assets/images/robot-body.png';
 import robot from '../assets/images/robot.png';
 
 class Robot extends Component {
-  state = {
-    show: false,
-    id: null,
-  };
+  constructor(props) {
+		super(props);
+		
+		this.state = {
+			show: false,
+			id: null,
+		};
+	}
   showModal = (id) => {
       console.log('id', id);
     this.setState({

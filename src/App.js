@@ -1,10 +1,10 @@
 import React from 'react';
 import './scss/app.scss';
-import Robot from './screens/Robot';
+import FormComponent from './components/Form';
 
 function App() {
   return (
-    <Robot></Robot>
+    <FormComponent></FormComponent>
   );
 }
 
