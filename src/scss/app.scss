@@ -307,7 +307,13 @@
             opacity: 1;
             pointer-events: auto;
         }
-    }
+		}
+		circle {
+			fill: #B5B5B5;
+			&:nth-of-type(1) {
+				fill:#A871F0;
+			}
+		}
 		&-carrousel {
 			&-comp {
 				margin-bottom: 24px;
@@ -371,9 +377,6 @@
 						left: -43px;
 						width: 86px; 
 						height: 86px;
-						circle {
-							fill:#A871F0;
-						}
 						text {
 							fill:white;
 							font-size: 60px;
@@ -509,6 +512,15 @@
 				&-continue {
 					width: 50%;
 				}
+			}
+		}
+		&-game {
+			background-color: #FFFFFF;
+			padding: 28px;
+			&-title {
+				font-size: 28px;
+				color: #262626;
+				font-weight: 700;
 			}
 		}
 		&-purple-btn {

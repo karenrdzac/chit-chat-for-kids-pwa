@@ -34,7 +34,7 @@ class Login extends Component {
 					<form className='form' name='signUpForm'>
 						<input type='text' className='ChitChat-input-log-in' name='user' placeholder='User Name' onChange={this.handleNameChange} minLength='2'></input>
 						<input className='ChitChat-input-log-in' name='password' type='password' placeholder='Password' onChange={this.handlePasswordChange} minLength='3'></input>
-						<button disabled={!this.state.name || !this.state.password} className='buttons-menu ChitChat-white-button white-btn'><Link to='/dashboard/my-progress'>Continue</Link></button>
+						<button disabled={!this.state.name || !this.state.password} className='buttons-menu ChitChat-white-button white-btn'><Link to='/dashboard/activities'>Continue</Link></button>
 					</form>
 				</div>	
 			</div>   		

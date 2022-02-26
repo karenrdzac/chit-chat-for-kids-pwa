@@ -55,7 +55,7 @@ class FormComponent extends Component {
 								<input className='ChitChat-formulary-inp-container-input' placeholder='Type your answer' id='childGrade'></input>
 							</div>
 							<div className='ChitChat-formulary-btn-container'>
-								<button className='ChitChat-purple-btn ChitChat-formulary-btn-container-continue'><Link to='/dashboard/my-progress'>Continue</Link></button>
+								<button className='ChitChat-purple-btn ChitChat-formulary-btn-container-continue'><Link to='/dashboard/activities'>Continue</Link></button>
 							</div>					
 						</form>
 					</section>
