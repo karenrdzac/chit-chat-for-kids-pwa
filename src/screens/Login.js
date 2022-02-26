@@ -23,7 +23,7 @@ class Login extends Component {
 	};
   render() {
     return (
-			<div className='ChitChat'>
+			<div className='ChitChat body'>
 				<button className='back-btn'>
 					<img src={arrowLeft}></img>
 					<Link to='/'>Back</Link>
@@ -32,10 +32,10 @@ class Login extends Component {
 					<img src={logo} className ='logo-img'></img>
 					<p>Let’s create your account!</p>
 					<form className='form' name='signUpForm'>
-							<input className='ChitChat-input-log-in' name='user' placeholder='User Name' onChange={this.handleNameChange}></input>
-							<input className='ChitChat-input-log-in' name='password' type='password' placeholder='Password' onChange={this.handlePasswordChange}></input>
-							<button disabled={!this.state.name || !this.state.password} className='buttons-menu ChitChat-white-button sign-up-btn'>Continue</button>
-						</form>
+						<input type='text' className='ChitChat-input-log-in' name='user' placeholder='User Name' onChange={this.handleNameChange} minLength='2'></input>
+						<input className='ChitChat-input-log-in' name='password' type='password' placeholder='Password' onChange={this.handlePasswordChange} minLength='3'></input>
+						<button disabled={!this.state.name || !this.state.password} className='buttons-menu ChitChat-white-button white-btn'><Link to='/dashboard/my-progress'>Continue</Link></button>
+					</form>
 				</div>	
 			</div>   		
     );

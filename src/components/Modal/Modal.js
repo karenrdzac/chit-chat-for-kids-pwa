@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import '../scss/app.scss';
-import close from '../assets/images/close.svg';
+import '../../scss/app.scss';
+import close from '../../assets/images/close.svg';
 class Modal extends Component {
   constructor(props) {
     super(props);
@@ -8,13 +8,8 @@ class Modal extends Component {
   
 
   render() {
-  //return <button className="ChitChat-desc-buttons">{this.props.btnDesc}</button>;
-  /*if (this.props.) {
-    console.log('true');
-  }*/
-  const showHideClassName = this.props.show ? 'ChitChat-modal display-block' : 'ChitChat-modal display-none';
     return (
-      <div className={showHideClassName} id={this.props.id}>
+      <div id={this.props.id}>
         <section className='ChitChat-modal-comp'>
           <div className='ChitChat-modal-comp-container'>
             <div className='ChitChat-modal-comp-close'>
@@ -22,8 +17,10 @@ class Modal extends Component {
                 <img src={close}></img>
               </button>  
             </div>
-            <h2>{this.props.btnName}</h2>
-            <p>{this.props.modalDesc}</p>
+            <div className='ChitChat-modal-comp-header'>
+              <h2>{this.props.btnName}</h2>
+              <p>{this.props.modalDesc}</p>
+            </div>
             <img className='ChitChat-modal-comp-container-img' src={this.props.imageSrc}></img>
           </div>
         </section>
