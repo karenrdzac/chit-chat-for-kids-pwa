@@ -24,20 +24,20 @@ class SignUp extends Component {
 
   render() {
     return (
-      <div className='ChitChat'>
-				<button className='back-btn'>
-					<img src={arrowLeft}></img>
-					<Link to='/'>Back</Link>
-				</button>
-				<div className='ChitChat-sign-up'>
-					<img src={logo} className ='logo-img'></img>
-          <p className='ChitChat-sign-up-text'>Sign up</p>
-					<form className='form' name='signUpForm'>
-            <input className='ChitChat-input-log-in' name='user' placeholder='User Name' onChange={this.handleNameChange}></input>
-            <input className='ChitChat-input-log-in' name='password' type='password' placeholder='Password' onChange={this.handlePasswordChange}></input>
-            <button disabled={!this.state.name || !this.state.password} className='buttons-menu ChitChat-white-button sign-up-btn'>Continue</button>
-          </form>
-        </div>  
+      <div className='ChitChat body'>
+			<button className='back-btn'>
+				<img src={arrowLeft}></img>
+				<Link to='/'>Back</Link>
+			</button>
+			<div className='ChitChat-sign-up'>
+				<img src={logo} className ='logo-img'></img>
+          		<p className='ChitChat-sign-up-text'>Sign up</p>
+				<form className='form' name='signUpForm'>
+					<input className='ChitChat-input-log-in' name='user' placeholder='User Name' onChange={this.handleNameChange}></input>
+					<input className='ChitChat-input-log-in' name='password' type='password' placeholder='Password' onChange={this.handlePasswordChange}></input>
+					<button disabled={!this.state.name || !this.state.password} className='buttons-menu ChitChat-white-button sign-up-btn'><Link to='/form'>Continue</Link></button>
+          		</form>
+        	</div>  
       </div>		
     );
   }
