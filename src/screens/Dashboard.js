@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import '../scss/app.scss';
-import { Route, Link, Routes, Outlet } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 import activities from '../assets/images/activities.png';
 import brain from '../assets/images/brain.png';
@@ -10,18 +10,15 @@ import home from '../assets/images/home.png';
 import myProgress from '../assets/images/my-progress.png';
 import profile from '../assets/images/profile.png';
 import robotBtn from '../assets/images/robot-btn.png';
-
-import MyProgress from "./MyProgress";
-import Community from "./Community";
-
+import activitieLight from '../assets/images/activities-light.png';
 
 class Dashboard extends Component {
 	constructor(props) {
 		super(props);
 			
 		this.state = {
-			title: 'Progress',
-			image: brain,
+			title: 'Let\'s Learn!',
+			image: activitieLight,
 		}
 	}
 
@@ -36,6 +33,13 @@ class Dashboard extends Component {
 		this.setState({
 			title: 'Know Our Community',
 			image: communityPersons
+		})
+	}
+
+	changeToActivities = () => {
+		this.setState({
+			title: 'Let\'s Learn!',
+			image: activitieLight
 		})
 	}
 
@@ -57,8 +61,8 @@ class Dashboard extends Component {
 				<div className='ChitChat-dashboard-footer'>
 						<div className='ChitChat-dashboard-footer-nav'>
 							<div className='ChitChat-dashboard-footer-nav-cont'>
-								<button className='ChitChat-dashboard-footer-nav-cont-option'>
-									<Link to='/'>
+								<button className='ChitChat-dashboard-footer-nav-cont-option' onClick={this.changeToActivities}>
+									<Link to='/dashboard/activities'>
 										<img src={activities}></img>
 										<span>Activities</span>
 									</Link>

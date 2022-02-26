@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import '../scss/app.scss';
 import Carrousel from '../components/Carrousel';
 
-class Robot extends Component {
+class Game extends Component {
   constructor(props) {
 		super(props);
 		this.state = this.initialize();
@@ -129,11 +129,12 @@ class Robot extends Component {
 		});
 
     return (
-        <div className='ChitChat ChitChat-robot'>
+        <div className='ChitChat ChitChat-game'>
+		  <h2 className='ChitChat-game-title'>Neuro-Linguistic Sessions</h2>
           {levelList}
         </div>
     );
   }
 }
 
-export default Robot;
+export default Game;
