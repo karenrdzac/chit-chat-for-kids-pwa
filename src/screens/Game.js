@@ -13,6 +13,7 @@ class Game extends Component {
 			levelData : [
 				{
 					id:1,
+					status: 'In Progress',
 					items: [
 						{
 							id:1,
@@ -38,6 +39,7 @@ class Game extends Component {
 				},
 				{
 					id:2,
+					status: 'Not Started',
 					items: [
 						{
 							id:1,
@@ -63,6 +65,7 @@ class Game extends Component {
 				},
 				{
 					id:3,
+					status: 'Not Started',
 					items: [
 						{
 							id:1,
@@ -88,6 +91,7 @@ class Game extends Component {
 				},
 				{
 					id:4,
+					status: 'Not Started',
 					items: [
 						{
 							id:1,
@@ -123,6 +127,7 @@ class Game extends Component {
 					states={this.state}
 					key={level.id}
 					id={level.id}
+					status={level.status}
 					items={level.items}
 				/>
 			)

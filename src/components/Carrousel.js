@@ -15,6 +15,13 @@ class Carrousel extends Component {
 
 		const images = importAll(require.context('../assets/images/carrousel', false, /\.(png|jpe?g|svg)$/));
 
+		let outStyleStatus = 'none';
+		if(this.props.status === 'Completed') {
+			outStyleStatus = 'completed';
+		}else if(this.props.status === 'In Progress'){
+			outStyleStatus = 'inprogress';
+		}
+
 		return (
 			<div className='ChitChat-carrousel-comp'>
 				<section className='ChitChat-carrousel-comp-container'>
@@ -34,8 +41,8 @@ class Carrousel extends Component {
 						)
 					})}
 
-					<svg className="ChitChat-carrousel-comp-container-index">
-						<circle cx="43" cy="43" r="43"/>
+					<svg className='ChitChat-carrousel-comp-container-index'>
+						<circle cx="43" cy="43" r="43" className={outStyleStatus}/>
 						<text x="25" y="65">{this.props.id}</text>
 						Sorry, your browser does not support inline SVG.
 					</svg>

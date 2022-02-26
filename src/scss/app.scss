@@ -308,12 +308,6 @@
             pointer-events: auto;
         }
 		}
-		circle {
-			fill: #B5B5B5;
-			&:nth-of-type(1) {
-				fill:#A871F0;
-			}
-		}
 		&-carrousel {
 			&-comp {
 				margin-bottom: 24px;
@@ -377,6 +371,19 @@
 						left: -43px;
 						width: 86px; 
 						height: 86px;
+
+						circle {
+							&.inprogress {
+								fill: #A871F0;
+							}
+							&.completed {
+								fill: #699208;
+							}
+							&.none {
+								fill: #B5B5B5;
+							}
+						}
+
 						text {
 							fill:white;
 							font-size: 60px;
