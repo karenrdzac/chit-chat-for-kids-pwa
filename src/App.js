@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import './scss/app.scss';
 import Login from './screens/Login';
 import SignUp from './screens/SignUp';
+import Game from './screens/Game';
 import Home from './screens/Home';
 import Robot from './screens/Robot';
 import Dashboard from './screens/Dashboard';
@@ -12,6 +13,7 @@ import MyProgress from './screens/MyProgress';
 
 function App() {
   return (
+<<<<<<< Updated upstream
     <Router>
       <Routes>
         <Route path='dashboard' element={<Dashboard/>}>
@@ -35,6 +37,14 @@ function App() {
       </BrowserRouter>
     </div>*/
     
+=======
+    <Routes>
+      <Route path='/login' element={<Login/>} />
+      <Route path='/signup' element={<SignUp/>} />
+      <Route path='/game' element={<Game/>} />
+      <Route path='/' element={<Home/>} />
+    </Routes>
+>>>>>>> Stashed changes
   );
 }
 
